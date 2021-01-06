@@ -27,8 +27,8 @@ public final class Anything extends JavaPlugin implements CommandExecutor {
                     target.sendMessage(ChatColor.GRAY + "당신은 플레이어 " + sender + "님에 의해 체력이 2로 설정되었습니다.");
                     target.playSound(target.getLocation(), Sound.BLOCK_ANVIL_FALL, 0.5f, 0.5f);
                 } else {
-                    sender.sendMessage(ChatColor.RED + "사용법: /heart [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
-                    sender.sendMessage(ChatColor.RED + "사용법: /heart reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
+                    sender.sendMessage(ChatColor.RED + "사용법: /health [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
+                    sender.sendMessage(ChatColor.RED + "사용법: /health reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
                 }
             } else if (args.length == 2) {
                 if (args[0].equalsIgnoreCase("reset")) {
@@ -40,13 +40,13 @@ public final class Anything extends JavaPlugin implements CommandExecutor {
                         target.sendMessage(ChatColor.GRAY + "성공적으로 체력이 복구되였습니다.");
                         target.playSound(target.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 0.5f, 0.5f);
                     } else {
-                        sender.sendMessage(ChatColor.RED + "사용법: /heart [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
-                        sender.sendMessage(ChatColor.RED + "사용법: /heart reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
+                        sender.sendMessage(ChatColor.RED + "사용법: /health [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
+                        sender.sendMessage(ChatColor.RED + "사용법: /health reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
                     }
                 }
             } else {
-                sender.sendMessage(ChatColor.RED + "사용법: /heart [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
-                sender.sendMessage(ChatColor.RED + "사용법: /heart reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
+                sender.sendMessage(ChatColor.RED + "사용법: /health [플레이어] -> [플레이어]의 체력을 2로 설정합니다.");
+                sender.sendMessage(ChatColor.RED + "사용법: /health reset [플레이어] -> [플레이어]의 체력을 복구시킵니다.(20)");
             }
         } else {
             sender.sendMessage(ChatColor.RED + "당신은 이 명령어를 실행할 권한이 없습니다.");
