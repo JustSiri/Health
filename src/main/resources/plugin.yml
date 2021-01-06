@@ -1,0 +1,7 @@
+name: Anything
+version: ${project.version}
+main: any.justsiri.anything.Anything
+api-version: 1.16
+
+commands:
+  health:
